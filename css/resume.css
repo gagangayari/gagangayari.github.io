@@ -1,0 +1,107 @@
+
+
+
+body{
+    /* font-family: Arial, sans-serif; */
+
+    background-color: antiquewhite;
+    text-align: center;
+    /* max-height: 50vh; */
+}
+
+
+hr {
+    margin: 0;
+}
+
+
+nav{
+    margin: auto;
+    /* border: 2px solid red; */
+    display:  flex;
+    justify-content: flex-end;
+    font-size: larger;
+    /* gap: 1em; */
+    max-width: 50vw;
+    height: fit-content;
+    
+}
+
+
+nav p{
+    margin-right: 1em;
+}
+
+.flex-container {
+    margin: auto;
+
+    max-width: 60vw;
+    display: flex;
+    overflow-y: auto;
+    /* border: 2px solid black; */
+}
+
+.sidenav {
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid red; */
+    padding: 20px;
+    /* min-width: 200px; */
+    position: fixed;
+    width: 200px;
+    height: 100vh;
+}
+
+.content {
+    /* flex: 1; */
+    padding: 20px;
+    margin-left: 250px;
+    /* border: 2px solid green; */
+    overflow-y: scroll;
+    /* position: absolute; */
+}
+
+.main-cv{
+    /* display: flex; */
+}
+
+
+section {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+
+}
+
+section ul , section h4 {
+    text-align: left;
+}
+
+
+/* Highlight the active link in the sidenav */
+.active-link {
+    background-color: #4CAF50;
+    color: white;
+}
+
+
+/* Media query to hide the sidenav on screens smaller than 768px (typical mobile phone width) */
+@media (max-width: 900px) {
+
+    .flex-container{
+        max-width: 100vw;
+        margin: 0;
+    }
+
+    .sidenav {
+        background-color: blue;
+        display: none;
+    }
+
+
+    .content {
+        margin: 0;
+        width: 100%; /* Make the content take full width on smaller screens */
+    }
+}
+
