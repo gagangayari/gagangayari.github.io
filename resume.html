@@ -19,32 +19,38 @@
 <div class="flex-container">
    
     <div class="sidenav">
-        <a href="#section1" class="nav-link"> <i class="fa-solid fa-school"></i> &nbsp; Work Experience</a>
+        <a href="#section1" class="nav-link"> <i class="fa-solid fa-user-tie"></i> &nbsp; Work Experience</a>
         <a href="#section2" class="nav-link"> <i class="fa-solid fa-book"></i> &nbsp; Projects</a>
         <a href="#section3" class="nav-link"> <i class="fa-solid fa-building-columns"></i> &nbsp; Education</a>
-        <a href="#section4" class="nav-link"> <i class="fa-solid fa-user-tie"></i> &nbsp; Interests </a> 
+        <a href="#section4" class="nav-link"> <i class="fa-solid fa-person-running"></i> &nbsp; Interests </a> 
     </div>
 
     <div class="content">
         <section id="section1">
             
-            <h2> <i class="fa-solid fa-school"></i>&nbsp;Work Experience</h2>
-            <h4>Infosys Pvt Ltd (July,2021 - present)</h4>
+            <h2> <i class="fa-solid fa-user-tie"></i>&nbsp;Work Experience</h2>
+            <h4>Infosys Pvt Ltd, Bengaluru, India (July, 2021 - present)</h4>
             <div class="work">
                 <ul>
-                    <li>Worked on AI First Software Engineering Project </li>
+                    <li>AI First Software Engineering Project <i>(2022-present)</i></li>
                     <ul>
-                        <li>Built a plugin(ileadbuddy)</li>
-                        <li>Fine-tuned open source LLMs for custom codebases for several
-                            units in Infosys.
+                        <li>Worked on building a Github Co-pilot like tool (plugin) for augmenting coding tasks for custom domain codebases.</li>
+                        <li>The plugin provides functionalities encompassing code suggestion, code documentation, and generation of unit test cases.</li>
+                       
+                        <li>Fine-tuned (LoRA) open-source <strong> Large Language Models (LLM)</strong> such as Starcoderbase-3b and CodeGen-2.7B for specific Infosys units. (Finacle, Equinox, IS) thereby producing domain specific code suggestions.
                         </li>
-                        <li>Business Impact :</li>
+                        <li>Formulated the <strong>Retrieval Augmented Generation(RAG)</strong> pipeline to gather context from the IDE environment for better contextual suggestion.</li>
+                        <li>Business Impact : Better code suggestion provided compared to Co-pilot in majority of the cases. Improvement in productivity in project specific code upto 20%.</li>
+                        <i>Tech Stack : PyTorch, Langchain, Transformers (HF), LoRA</i>
                     </ul>
-                    <li>Infosys Knowledge Studio</li>
+                    <li>Infosys Knowledge Studio (IKS) &nbsp; <i>(2021-2022)</i></li>
                     <ul>
-                        <li>Learnt Angular</li>
-                        <li>Graph Neural Networks</li>
-                        <li>GraphQL</li>
+                        <li>IKS is a visualization tool for graph databases.</li>
+                        <li>Enhanced the front-end functionality of the Angular application,
+                            implementing dark mode, resolving accessibility issues, and addressing numerous GitHub issues.</li>
+                        <li>Devops Responsibility : Managed the Continuous Integration/Continuous Deployment (CI/CD) pipeline and contributed to the upkeep of servers, storage systems, and security vulnerabilities for the application.
+                        </li>
+                        <i>Tech Stack : Angular, Docker, Kubernetes</i>
                     </ul>
                     
                 </ul>
@@ -56,30 +62,31 @@
         <section id="section2">
             
             <h2> <i class="fa-solid fa-book"></i> &nbsp;Projects & Publications</h2>
-            <h4>Publication</h4>
+            <h3>Publication</h3>
 
             <div class="publication">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, alias inventore earum modi vel enim, doloremque repellendus magni repellat excepturi, ducimus impedit neque veritatis! Cumque ducimus tempore dolores error expedita!</p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque officiis autem tempora. Distinctio pariatur iste amet tenetur natus quia veniam similique adipisci beatae fugiat, id quasi vitae incidunt dolorum qui?</p>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus iusto, praesentium suscipit ratione voluptatem exercitationem est in natus debitis, iste illo itaque, facilis enim maiores ab iure! Tempore, quasi blanditiis.</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque eveniet veniam assumenda placeat consectetur odit distinctio culpa itaque dicta, ducimus id rem sed ad dolorum facere aliquid mollitia. Fuga, laudantium?</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque eveniet veniam assumenda placeat consectetur odit distinctio culpa itaque dicta, ducimus id rem sed ad dolorum facere aliquid mollitia. Fuga, laudantium?</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque eveniet veniam assumenda placeat consectetur odit distinctio culpa itaque dicta, ducimus id rem sed ad dolorum facere aliquid mollitia. Fuga, laudantium?</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque eveniet veniam assumenda placeat consectetur odit distinctio culpa itaque dicta, ducimus id rem sed ad dolorum facere aliquid mollitia. Fuga, laudantium?</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque eveniet veniam assumenda placeat consectetur odit distinctio culpa itaque dicta, ducimus id rem sed ad dolorum facere aliquid mollitia. Fuga, laudantium?</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque eveniet veniam assumenda placeat consectetur odit distinctio culpa itaque dicta, ducimus id rem sed ad dolorum facere aliquid mollitia. Fuga, laudantium?</p>
+
+               <a href="https://dl.acm.org/doi/10.1145/3526241.3530362" target="_blank">  <h4>GAUR : Genetic Algorithm based Unlocking of Register Transfer Level Locking  </h4></a>
+               
+                <ul>
+                    <li>Attempted the first ever Genetic Algorithm (GA) based attack (to the best of my knowledge) on RTL lockings.</li>
+                    <li>Equivalent C code of the locked RTL circuit was obtained using a tool called <a href="https://github.com/ckarfa/FastSim">FastSim</a>. Attack was performed on the C code which is obfuscated.</li>
+                    <li>Successfully able to unlock secured C code in majority of the test cases, which was obtained from the locked RTL description.</li>
+                    <li>Conducted experiments on 14 benchmarks, achieving a success rate exceeding 85%.</li>
+                    <i>Tech Stack : C</i>
+               
+                </ul>
             </div>
 
-            <h4>Projects</h4>
+            <h3>Projects</h3>
             <div class="projects">
-                <p>Restuarant WebApp</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam earum molestias beatae, aliquam placeat quis minima in eos, architecto incidunt excepturi fuga sapiente magni nihil, esse repellat sunt doloremque dolorem?</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea blanditiis hic sunt, minus obcaecati est molestias tempore maiores quidem alias voluptatum voluptate dolorem neque, nemo cumque impedit quasi ut ducimus.</p>
+                <a href="https://my-restaurant-ce2f0.web.app/home" target="_blank"><h4>Restuarant WebApplication </h4></a>
                 <ul>
-                    <li>Feature 1</li>
-                    <li>Feature 2</li>
-                    <li>Feature 3</li>
-
+                    <li>Developed a dynamic Angular-based web application tailored for restaurant operations, featuring an intuitive interface for both user(client) and owner.
+                    </li>
+                    <li>Implemented comprehensive ordering functionalities, enabling users to effortlessly select and order food items from the menu.</li>
+                    <li>Implemented admin functionalities allowing easy modification of menu items for restaurant owners, including adding, removing, and editing (CRUD) items as needed.</li>
+                    <i>Tech Stack : Angular, Firebase, NGRX</i>
                 </ul>
                 
             </div>
@@ -89,24 +96,47 @@
             
             <h2> <i class="fa-solid fa-building-columns"></i> &nbsp;Education</h2>
             <ul>
-                <li>M.Tech in Data Science, IIT Guwahati, Assam</li>
-                <ul>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis ullam facilis deserunt. Porro neque aperiam necessitatibus perferendis architecto reprehenderit, doloremque optio aut tempora fugiat perspiciatis eius saepe, aliquam laborum dignissimos!</li>
+                <li>M.Tech in Data Science, IIT Guwahati, Assam.</li>
+                <!-- <ul>
+                    <li>Attended courses on Data Structures & Algorithms, Machine Learning, Probability & Statistics</li>
+                    <li>Worked as Teaching Assistant for DBMS for 3months.</li>
                     
-                </ul>
-                <li>B.Tech in Electronics & Instrumentation Engineering, NIT Silchar, Assam</li>
-                <ul>
+                </ul> -->
+                <li>B.Tech in Electronics & Instrumentation Engineering, NIT Silchar, Assam.</li>
+                <!-- <ul>
                     
                     <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis ullam facilis deserunt. Porro neque aperiam necessitatibus perferendis architecto reprehenderit, doloremque optio aut tempora fugiat perspiciatis eius saepe, aliquam laborum dignissimos!</li>
-                </ul>
+                </ul> -->
+
             </ul>
 
         </section>
 
         <section id="section4">
-            <h2><i></i>Interests</h2>
+            <h2><i class="fa-solid fa-person-running"></i> &nbsp;Skills & Interests</h2>
+            <ul>
+                <li>Enthusiastic about guitar playing, expressing a deep passion for crafting melodies and rhythms across diverse musical genres, fostering creativity and resilience.</li>
+                <li>Active participant in football, fostering teamwork, leadership, and maintaining physical fitness.</li>
+                <li>Avid reader of self-help books, leveraging insights for personal growth, motivation, and development. Some of the favourite books are <i>Think & Grow Rich</i>, <i>How to Win freinds and Influence People</i>, <i></i></li>
+                <li>Passionate about coding, continuously expanding knowledge and skills in programming languages and technologies.</li>
+            </ul>
+
 
         </section>
+        <div style="height: 50vh;">
+
+        </div>
+
+        <!-- <section id="section5">
+            <h2>Blogs</h2>
+            <ul>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium exercitationem impedit optio minus quaerat ullam excepturi dolores voluptas assumenda quidem esse, odit libero dicta laboriosam. Reiciendis, consequuntur omnis! Debitis, pariatur.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium exercitationem impedit optio minus quaerat ullam excepturi dolores voluptas assumenda quidem esse, odit libero dicta laboriosam. Reiciendis, consequuntur omnis! Debitis, pariatur.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium exercitationem impedit optio minus quaerat ullam excepturi dolores voluptas assumenda quidem esse, odit libero dicta laboriosam. Reiciendis, consequuntur omnis! Debitis, pariatur.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium exercitationem impedit optio minus quaerat ullam excepturi dolores voluptas assumenda quidem esse, odit libero dicta laboriosam. Reiciendis, consequuntur omnis! Debitis, pariatur.</li>
+            </ul>
+
+        </section> -->
     </div>
 </div>
 
@@ -121,7 +151,7 @@
 
             sections.forEach(section => {
                 const rect = section.getBoundingClientRect();
-                if (rect.top <= 50 && rect.bottom >= 50) {
+                if (rect.top <= 50 && rect.bottom>=50) {
                     currentSectionId = section.id;
                 }
             });

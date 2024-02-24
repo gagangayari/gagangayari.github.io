@@ -2,10 +2,14 @@
 
 
 body{
-    /* font-family: Arial, sans-serif; */
-
+    font-family: Arial, sans-serif;
+    font-size: large;
     background-color: antiquewhite;
     text-align: center;
+    /* letter-spacing: 1px; */
+    line-height:1.4em;
+    font-weight: 400;
+    /* font-family:'Times New Roman', Times, serif; */
     /* max-height: 50vh; */
 }
 
@@ -14,7 +18,13 @@ hr {
     margin: 0;
 }
 
+ul {
+    font-size: medium;
+}
 
+ul ul {
+    margin-left: -20px;
+}
 nav{
     margin: auto;
     /* border: 2px solid red; */
@@ -35,7 +45,7 @@ nav p{
 .flex-container {
     margin: auto;
 
-    max-width: 60vw;
+    max-width: 65vw;
     display: flex;
     overflow-y: auto;
     /* border: 2px solid black; */
@@ -61,15 +71,18 @@ nav p{
     /* position: absolute; */
 }
 
-.main-cv{
+.publication h4{
+    /* display: inline-block; */
     /* display: flex; */
 }
 
 
 section {
+    padding: 1rem 2rem ;
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 
 }
 
@@ -83,7 +96,6 @@ section ul , section h4 {
     background-color: #4CAF50;
     color: white;
 }
-
 
 /* Media query to hide the sidenav on screens smaller than 768px (typical mobile phone width) */
 @media (max-width: 900px) {

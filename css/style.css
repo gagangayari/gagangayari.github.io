@@ -6,6 +6,8 @@ hr {
 body{
     background-color: antiquewhite;
     text-align: center;
+    letter-spacing: 1px;
+    font-size: larger;
 }
 
 .lists{
