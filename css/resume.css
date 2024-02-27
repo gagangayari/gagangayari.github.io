@@ -69,6 +69,7 @@ nav p{
     /* border: 2px solid green; */
     overflow-y: scroll;
     /* position: absolute; */
+    max-width: 800px;
 }
 
 .publication h4{
@@ -116,4 +117,3 @@ section ul , section h4 {
         width: 100%; /* Make the content take full width on smaller screens */
     }
 }
-
